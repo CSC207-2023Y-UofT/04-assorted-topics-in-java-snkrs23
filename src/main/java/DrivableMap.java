@@ -43,9 +43,8 @@ class DrivableMap {
     public List<Tradeable> getTradeable(){
         List<Tradeable> list = new ArrayList<Tradeable>();
         for (Drivable drivable: drivable_map.values()){
-            if (drivable instanceof Tradeable){
-                Tradeable object = (Tradable) drivable;
-                list.add(object);
+            if (drivable instanceof Tradable){
+                list.add((Tradeable) drivable);
             }
         }
         return list;
