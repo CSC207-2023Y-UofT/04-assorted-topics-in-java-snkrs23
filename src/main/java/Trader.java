@@ -5,7 +5,7 @@
  * Tradable: our Trader can have objects of any type, not just Tradable
  * ones! To have our original Trader class from Lab 3, we can
  * create a Trader<Tradable> object, as that will enforce that every
- * object is Tradable.
+ * object is Tradable. 
  *
  * Go through the TODOs below and complete them.
  */
