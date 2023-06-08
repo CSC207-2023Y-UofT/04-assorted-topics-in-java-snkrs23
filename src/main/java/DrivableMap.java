@@ -22,11 +22,11 @@ class DrivableMap {
         drivable_map = new HashMap<>();
     }
 
-    public boolean addDriveable(String ID, Driveable object){
-        if (drivable_map.containsKey(ID)){
+    public boolean addDriveable(String id, Driveable object){
+        if (drivable_map.containsKey(id)){
             return false;
         }
-        drivable_map.put(ID, object);
+        drivable_map.put(id, object);
         return true;
     }
 
