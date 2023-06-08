@@ -6,6 +6,7 @@
  * ones! To have our original Trader class from Lab 3, we can
  * create a Trader<Tradable> object, as that will enforce that every
  * object is Tradable.
+ *
  * Go through the TODOs below and complete them.
  */
 
@@ -40,8 +41,8 @@ public class Trader<T> {
      */
     public Trader(int money){
         this.money = money;
-        this.inventory = new ArrayList<>();
-        this.wishlist = new ArrayList<>();
+        this.inventory = new ArrayList<T>();
+        this.wishlist = new ArrayList<T>();
     }
 
 
@@ -49,7 +50,7 @@ public class Trader<T> {
     /* TODO: Implement the method addToWishlist that takes an
      *       object of type T and adds it to this Trader's wishlist.
      */
-    public addToWishList(T item){
+    public void addToWishList(T item){
         this.wishlist.add(item);
     }
 
