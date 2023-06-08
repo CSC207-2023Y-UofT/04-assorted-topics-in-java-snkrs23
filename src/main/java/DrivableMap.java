@@ -22,7 +22,7 @@ class DrivableMap {
         drivable_map = new HashMap<>();
     }
 
-    public boolean addDriveable(String id, Driveable object){
+    public boolean addDrivable(String id, Drivable object){
         if (drivable_map.containsKey(id)){
             return false;
         }
